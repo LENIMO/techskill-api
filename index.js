@@ -1,7 +1,9 @@
 import express from 'express'
 import fs from 'fs/promises'
+import cors from 'cors'
 
 const app = express()
+app.use(cors())
 const PORT = process.env.PORT || 3000
 const jsonFilePath = './techstack_names.json'
 
